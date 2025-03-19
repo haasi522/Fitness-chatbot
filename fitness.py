@@ -35,7 +35,7 @@ vectorizer = TfidfVectorizer()
 question_vectors = vectorizer.fit_transform(df['Question'])
 
 # Secure API Key (Use environment variable instead of hardcoding)
-API_KEY = st.secrets["GEMINI_API_KEY"]  # Store in Streamlit secrets
+API_KEY = st.secrets["AIzaSyBbHWhsrX2dQkmiHV5aGhzd-RledDJbzfg"]  # Store in Streamlit secrets
 
 # Configure Google Gemini AI
 genai.configure(api_key=API_KEY)
