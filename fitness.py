@@ -10,7 +10,7 @@ st.set_page_config(page_title="Smart Fitness Chatbot 💪", page_icon="💪", la
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-csv_url = "svecw_details.csv"
+csv_url = "fitness_details.csv"
 
 try:
     df = pd.read_csv(csv_url)
