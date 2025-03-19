@@ -13,7 +13,8 @@ if "messages" not in st.session_state:
 csv_url = "fitness_details.csv"
 
 try:
-    df = pd.read_csv(csv_url)
+    df = pd.read_csv(csv_url, encoding="ISO-8859-1")
+
 except Exception as e:
     st.error(f"Failed to load the CSV file. Error: {e}")
     st.stop()
