@@ -5,12 +5,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-st.set_page_config(page_title="Fitness Chatbot", layout="centered")
+st.set_page_config(page_title="Smart Fitness Chatbot 💪", page_icon="💪", layout="centered"")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-csv_url = "fitness(csvfile).csv"
+csv_url = "svecw_details.csv"
 
 try:
     df = pd.read_csv(csv_url)
@@ -39,8 +39,8 @@ def find_closest_question(user_query, vectorizer, question_vectors, df):
         return df.iloc[best_match_index]['Answer']
     else:
         return None
-st.title(" A Fitness Chatbot Agent ")
-st.write("Your Virtual Coach for a Healthier You!")
+st.title(" SVECW College Chatbot 🎓")
+st.write("Welcome to the College Chatbot! Ask me anything about the college.")
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
@@ -63,5 +63,4 @@ if prompt := st.chat_input("Type your question here..."):
             with st.chat_message("assistant"):
                 st.markdown(response.text)
         except Exception as e:
-            st.error(f"Sorry, I couldn't generate a response. Error: {e}")  # Fixing syntax error
-
+            st.error(f"Sorry, I couldn't generate a response. Error: {e}")
