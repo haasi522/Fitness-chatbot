@@ -11,5 +11,5 @@ The **Fitness Chatbot** is an AI-powered virtual assistant designed to help user
 - 🤖 **AI-Powered Assistance** – Real-time suggestions and Q&A support.
 - 🏆 **Motivation & Reminders** – Daily fitness motivation and reminders to stay on track.
 
-###OUTPUT:
+### OUTPUT:
 ![Screenshot 2025-03-29 133531](https://github.com/user-attachments/assets/5b246bdd-e558-41ec-820f-0f04dc34f605)
